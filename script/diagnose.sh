@@ -13,13 +13,13 @@ echo
 __color $GREEN "Protocols Status: "
 echo 
 
-/usr/bin/birdc show protocols
+/usr/sbin/birdc show protocols
 
 echo
 __color $GREEN "Route to DN42 anycast dns: "
 echo 
 
-/usr/bin/birdc show route for 172.20.0.53 all
+/usr/sbin/birdc show route for 172.20.0.53 all
 
 echo
 __color $GREEN "Ping DN42 anycast dns: "

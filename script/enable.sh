@@ -25,7 +25,7 @@ if [[ -d $BIRD_CONF_DIR/concrete/$CONF_NAME ]]; then
     rm -f $BIRD_CONF_DIR/conf
     ln -s $BIRD_CONF_DIR/concrete/$CONF_NAME $BIRD_CONF_DIR/conf
     echo "Config $CONF_NAME enabled"
-    /usr/bin/birdc configure
+    /usr/sbin/birdc configure
     echo "Config $CONF_NAME configured"
 else
     echo "Config $CONF_NAME not existed" >&2
